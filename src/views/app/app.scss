@@ -7,3 +7,37 @@ html{
 a{
   color: inherit;
 }
+
+iframe,embed{
+    overflow-x:hidden;
+    overflow-Y:hidden;
+    border: 0;
+    display: block;
+}
+
+::-webkit-scrollbar {
+    width: 0px!important;
+    height: 0px!important;
+}
+
+.App{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.Paper{
+  border: 1px solid black;
+  padding: 20px;
+}
+
+
+@media print {
+
+  body {
+    margin: 0;
+    color: #000;
+    background-color: #fff;
+  }
+
+}
