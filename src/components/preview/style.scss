@@ -1,0 +1,13 @@
+.Preview{
+  animation: fadein 2s;
+  text-align: center;
+  background: black;
+  color: white;
+  padding-bottom: 5px;
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
