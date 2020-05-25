@@ -1,0 +1,60 @@
+
+.Wrapper{
+  padding: 10px;
+}
+
+.Separator-x{
+  width: 50px;
+}
+
+.Separator-y{
+  height: 10px;
+}
+
+.Settings{
+  width: 100%;
+  background: rgba(0,0,0,0.1);
+  border-left: 1px solid black;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.SettingsHeader{
+  font-size: 24pt;
+  display: flex;
+  justify-content: center;
+  font-weight: lighter;
+  align-items: center;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+.WorkArea{
+  width: 100%;
+  background: rgba(0,0,0,0);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+input[TYPE="CHECKBOX"]{
+  width: 30px;
+  height: 30px;
+}
+
+.Row{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.CheckBoxWrapper{
+  width: 30px;
+}

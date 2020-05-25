@@ -7,6 +7,8 @@ import styles from './style.scss';
 
 function Preview(props) {
   const {state} = props;
+
+
   const styles = StyleSheet.create({
     page: {
       flexDirection: 'row',
@@ -49,20 +51,18 @@ function Preview(props) {
   }
 
 
-
-    return (
-
-      <div className="Preview">
-      <PDFViewer style={{width: "15vw",height: "25vw"}} scrolling="no">
-        <MyDocument />
-      </PDFViewer>
-      <p>
-      <PDFDownloadLink document={<MyDocument />} fileName="somename.pdf">
-       Download PDF
-      </PDFDownloadLink>
-      </p>
-      </div>
-  );
+  return(
+  <div className="Preview">
+  <PDFViewer style={{width: "15vw",height: "25vw"}} scrolling="no">
+    <MyDocument />
+  </PDFViewer>
+  <p>
+  <PDFDownloadLink document={<MyDocument />} fileName="somename.pdf">
+   Download PDF
+  </PDFDownloadLink>
+  </p>
+  </div>
+)
 
 
 }
