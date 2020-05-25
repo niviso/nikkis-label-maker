@@ -4,7 +4,7 @@ import React,{useContext,useEffect,useState} from 'react';
 import "./style.scss";
 function ImageSelector(props){
   const [state,setState] = useContext(AppContext);
-  const {setShowPreview} = props;
+  const {setShowPreview,reload} = props;
   const onChange = imageList => {
     // data for submit
   //  console.log(imageList[0].dataURL);
@@ -12,10 +12,7 @@ function ImageSelector(props){
 
 
   const SelectImage = (image) =>{
-    setShowPreview(false);
-    setTimeout(x=>{
-      setShowPreview(true);
-    },1);
+    reload();
     var tmp = JSON.parse(JSON.stringify(state));
     tmp.image = image.dataURL;
     setState(tmp);
