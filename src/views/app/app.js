@@ -25,11 +25,14 @@ function App() {
     <div className="SettingsWrapper">
     <Settings reload={reload}/>
     </div>
-  <div className="WorkArea">
-  <ImageSelector reload={reload}/>
+  <div className="WorkArea" style={{flexDirection:'column'}}>
+  <div>
+  <h1>{state.rows}X{state.columns}={state.rows+state.columns}</h1>
+  </div>
   <div style={{backgroundColor: 'white',display: 'flex',justifyContent:'center',alignItems:'center',overflow: 'hidden',width: (210/state.rows)+"mm", height: (297/state.columns)+"mm",border: "1px solid black"}}>
   {state.image ? <img src={state.image} height="100%" alt=""/> : <p>Item #x</p>}
   </div>
+  <ImageSelector reload={reload}/>
 
   </div>
   <div className="PreviewWrapper">
